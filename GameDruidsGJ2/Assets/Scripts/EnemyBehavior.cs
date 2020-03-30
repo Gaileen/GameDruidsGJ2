@@ -19,8 +19,10 @@ public class EnemyBehavior : MonoBehaviour
 
     void Update()
     {
-        // follow Player (when seen?)
+        // follow Player
         transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+
+        //INSERT: if player is certain distance away, Shoot()
     }
 
     // if Player collides, then Player dies from crash
