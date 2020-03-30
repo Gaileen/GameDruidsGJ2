@@ -35,7 +35,7 @@ public class ShipController : MonoBehaviour
 
         // horiz boundaries
         float screenRatio = (float)Screen.width / (float)Screen.height;
-        float widthOrtho = Camera.main.orthographicSize * screenRatio; //*orthoSize making ship respawn??
+        float screenWidth = Camera.main.orthographicSize * screenRatio; //orthoSize making ship respawn??
         //if (pos.x + shipBoundaryRadius > widthOrtho)
         //{
         //    pos.x = widthOrtho - shipBoundaryRadius;
