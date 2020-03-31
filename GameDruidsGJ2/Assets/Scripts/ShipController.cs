@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShipController : MonoBehaviour
 {
-    public float maxSpeed = 5f;
+    public float maxSpeed = 10f;
     public float rotSpeed = 180f;
 
     public float shipBoundaryRadius = 0.5f;
