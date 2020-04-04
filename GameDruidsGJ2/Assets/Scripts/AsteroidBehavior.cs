@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AsteroidBehavior : MonoBehaviour
 {
     public float screenHeight = 5f;
+    public Text healthtext;
 
     public int health = 30;
     //public GameObject deathEffect; // some prefab for later
@@ -27,6 +29,7 @@ public class AsteroidBehavior : MonoBehaviour
         {
             //Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(otherObj.gameObject);
+            healthtext.text = 0.ToString();
         }
     }
 

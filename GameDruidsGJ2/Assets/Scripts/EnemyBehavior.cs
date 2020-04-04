@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // basic outline for mvt/health of all enemies. will probably have more scripts inheriting this to add special methods for particular enemies 
 public class EnemyBehavior : MonoBehaviour
@@ -11,6 +12,7 @@ public class EnemyBehavior : MonoBehaviour
     public float rotSpeed = 45f;
     private Transform target;
     public GameObject player;
+    public Text healthtext;
 
     void Start()
     {
@@ -45,6 +47,7 @@ public class EnemyBehavior : MonoBehaviour
         {
             //Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(otherObj.gameObject);
+            healthtext.text = 0.ToString();
         }
     }
 
@@ -62,5 +65,6 @@ public class EnemyBehavior : MonoBehaviour
     {
         //Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        healthtext.text = 0.ToString();
     }
 }
