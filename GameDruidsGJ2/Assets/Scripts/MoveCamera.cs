@@ -6,13 +6,6 @@ public class MoveCamera : MonoBehaviour
 {
     public int speed;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         transform.position += speed * Vector3.right * Time.deltaTime;

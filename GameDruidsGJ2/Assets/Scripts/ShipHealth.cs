@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ShipHealth : MonoBehaviour
 {
-    public int health = 30; //sbj to change
+    public int health = 100;
     //public GameObject deathEffect;
 
     public Text healthtext;

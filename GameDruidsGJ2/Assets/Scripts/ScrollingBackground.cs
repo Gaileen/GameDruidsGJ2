@@ -28,7 +28,6 @@ public class ScrollingBackground : MonoBehaviour
         rightIndex = layers.Length - 1;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (paralax)

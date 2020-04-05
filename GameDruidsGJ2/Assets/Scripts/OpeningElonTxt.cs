@@ -5,16 +5,18 @@ using UnityEngine.UI;
 
 public class OpeningElonTxt : MonoBehaviour
 {
-    //Greetings, new secretary. For your first task, you're going to take command 
-    //of my new rocket to bring this new rover over to Mars. Don't crash into 
-    //anything and be careful of UFOs. Good Luck! (Click to continue)
+    //Welcome. Here at SpaceX, we’ve developed a “rocket” that will be able to
+    //take you and a rover to Mars. The “ship” is equipped with amazing spatial
+    //mobility along with other features that will help you if something
+    //happens, but I wouldn’t worry about that. Just make sure to get the rover
+    //to Mars and yourself back here safely. Good Luck! (Click to continue)
 
     public GameObject rover;
     public float delay = 0.1f;
     public string fullText;
     private string currentText = "";
 
-    public float showRoverTimer = 10f;
+    public float showRoverTimer = 11f;
 
     public static bool sceneDone = false;
 
