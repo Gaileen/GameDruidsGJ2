@@ -6,9 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/OpeningCutScene.unity
+    guid: b4755b0f2dc8440de97af6304558e44d
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 60f133118ceb8c54e94dd67cba437760
   - enabled: 1
-    path: Assets/Scenes/OpeningCutScene.unity
-    guid: b4755b0f2dc8440de97af6304558e44d
+    path: Assets/Scenes/ElonLvl2Txt.unity
+    guid: 229668e3e3fb440e2a6a482080af1d68
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: d181df349c517404b9ba47c37ad742a2
+  - enabled: 1
+    path: Assets/Scenes/ElonLvl3Txt.unity
+    guid: 0f0fab1444b7a4dfab977768ac92b5db
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 203b9ab0faaa142c5aa6221d50849604
+  - enabled: 1
+    path: Assets/Scenes/ElonLastTxt.unity
+    guid: fc222b3808f824f65acd9757dd882ed9
   m_configObjects: {}

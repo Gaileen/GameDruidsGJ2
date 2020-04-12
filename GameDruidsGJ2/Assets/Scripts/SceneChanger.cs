@@ -5,11 +5,46 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+    public QuestHandler quest;
+
     public void ChangeScene()
     {
-        if(OpeningElonTxt.sceneDone == true)
-        { 
-            SceneManager.LoadScene("Level1");
+        if (quest.isLvl1)
+        {
+            if (OpeningElonTxt.sceneDone == true)
+            {
+                SceneManager.LoadScene("Level1");
+            }
+
         }
+
+        if (quest.isLvl2)
+        {
+            if(OpeningElonTxt.sceneDone == true)
+            {
+                SceneManager.LoadScene("Level2");
+            }
+        }
+        if (quest.isLvl3)
+        {
+            if (OpeningElonTxt.sceneDone == true)
+            {
+                SceneManager.LoadScene("Level3");
+            }
+        }
+
+        if (quest.isComplete)
+        {
+            if (OpeningElonTxt.sceneDone == true)
+            {
+                //SceneManager.LoadScene("Menu");
+            }
+        }
+
+        // player has died
+        //if (quest.player == null)
+        //{
+        //LOAD FAILED SCENE
+        //}
     }
 }
