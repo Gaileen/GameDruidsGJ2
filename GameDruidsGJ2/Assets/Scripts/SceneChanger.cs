@@ -15,7 +15,6 @@ public class SceneChanger : MonoBehaviour
             {
                 SceneManager.LoadScene("Level1");
             }
-
         }
 
         if (quest.isLvl2)
@@ -37,14 +36,23 @@ public class SceneChanger : MonoBehaviour
         {
             if (OpeningElonTxt.sceneDone == true)
             {
-                //SceneManager.LoadScene("Menu");
+                SceneManager.LoadScene("Menu");
             }
         }
+    }
 
-        // player has died
-        //if (quest.player == null)
-        //{
-        //LOAD FAILED SCENE
-        //}
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("OpeningCutScene");
+    }
+
+    public void Instructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

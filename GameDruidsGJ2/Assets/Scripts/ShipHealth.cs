@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ShipHealth : MonoBehaviour
@@ -30,6 +31,4 @@ public class ShipHealth : MonoBehaviour
         Destroy(gameObject);
         healthtext.text = 0.ToString();
     }
-
-    
 }

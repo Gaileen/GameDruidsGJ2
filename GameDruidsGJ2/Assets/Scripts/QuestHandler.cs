@@ -117,5 +117,11 @@ public class QuestHandler : MonoBehaviour
             }
 
         }
+
+        // if player dead
+        if (player == null)
+        {
+            SceneManager.LoadScene("Failed");
+        }
     }
 }
